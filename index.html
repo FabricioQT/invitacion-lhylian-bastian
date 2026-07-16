@@ -412,7 +412,214 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold-light);outline
 }
 .map-container iframe{
   width:100%;height:300px;border:none;display:block;
-  filter:graysc…2639 tokens truncated…Reproducir música</div>
+  filter:grayscale(20%) contrast(1.05);
+}
+.map-info{
+  background:rgba(255,255,255,0.04);
+  border-top:1px solid rgba(201,168,76,0.15);
+  padding:18px 20px;text-align:left;
+  display:flex;align-items:center;gap:14px;
+}
+.map-icon{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--gold);display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.map-icon svg{width:16px;fill:var(--cobalt-deep);}
+.map-place-name{
+  font-family:'Cinzel',serif;font-size:13px;color:var(--white);letter-spacing:1px;
+}
+.map-place-sub{
+  font-family:'Lato',sans-serif;font-size:11px;font-weight:300;
+  color:rgba(255,255,255,0.4);margin-top:3px;
+}
+.map-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:18px;
+  background:rgba(201,168,76,0.12);
+  border:1px solid var(--gold-dim);
+  color:var(--gold-light);
+  font-family:'Lato',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  padding:12px 24px;border-radius:2px;text-decoration:none;
+  transition:background 0.2s;
+}
+.map-btn:hover{background:rgba(201,168,76,0.22);}
+
+/* ─────────────────────────────
+   GIFT / TRANSFER
+───────────────────────────── */
+.gift-section{
+  background:linear-gradient(135deg,#0e0e1a,var(--charcoal));
+  padding:72px 28px;text-align:center;
+}
+.gift-card{
+  max-width:400px;margin:28px auto 0;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(201,168,76,0.2);
+  border-radius:4px;padding:32px 24px;
+}
+.gift-heart{font-size:32px;margin-bottom:14px;display:block;}
+.gift-note{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:17px;color:rgba(255,255,255,0.7);line-height:1.8;
+}
+.gift-data{
+  margin-top:20px;padding-top:20px;
+  border-top:1px solid rgba(201,168,76,0.15);
+  font-family:'Lato',sans-serif;font-size:13px;font-weight:300;
+  color:rgba(255,255,255,0.55);line-height:1.9;overflow-wrap:anywhere;
+}
+.gift-data strong{color:var(--gold-light);font-weight:400;}
+.registry-card{max-width:400px;margin:18px auto 0;padding:32px 24px;border-radius:4px;background:linear-gradient(160deg,#1b3ea7,#317be0);border:1px solid rgba(255,255,255,.2);box-shadow:0 14px 40px rgba(0,0,0,.22);color:#fff;text-align:center}
+.registry-brand{width:82px;height:82px;margin:0 auto 18px;border:2px solid rgba(255,255,255,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Lato',sans-serif;font-size:26px;font-weight:300;letter-spacing:-1px}
+.registry-label{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.registry-code{font-family:'Cinzel',serif;font-size:clamp(38px,12vw,52px);font-weight:600;letter-spacing:4px;margin:10px 0 8px;color:#fff}
+.registry-names{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:23px;line-height:1.35;color:rgba(255,255,255,.9)}
+.registry-card .secondary-btn{margin-top:20px;border-color:rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.1)}
+.registry-card .secondary-btn:hover{background:rgba(255,255,255,.2)}
+
+/* ─────────────────────────────
+   RSVP
+───────────────────────────── */
+.rsvp-section{
+  background:radial-gradient(ellipse at 50% 0%,var(--cobalt) 0%,var(--cobalt-deep) 60%,#060a1a 100%);
+  padding:80px 28px;text-align:center;
+}
+.rsvp-deadline{
+  display:inline-block;
+  border:1px solid var(--gold);
+  color:var(--gold-pale);
+  font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;
+  padding:8px 22px;border-radius:40px;margin-bottom:24px;
+}
+.rsvp-card{
+  max-width:380px;margin:0 auto;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(201,168,76,0.25);
+  border-radius:4px;padding:36px 24px;
+}
+.rsvp-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;margin-top:22px;
+  background:linear-gradient(135deg,#25D366,#1aab56);
+  color:white;border:none;border-radius:4px;
+  font-family:'Lato',sans-serif;font-size:13px;letter-spacing:3px;text-transform:uppercase;
+  padding:17px 24px;cursor:pointer;text-decoration:none;
+  box-shadow:0 6px 24px rgba(37,211,102,0.25);
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.rsvp-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(37,211,102,0.35);}
+.rsvp-btn svg{width:18px;fill:white;flex-shrink:0;}
+.action-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.secondary-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border:1px solid var(--gold-dim);color:var(--gold-light);background:rgba(201,168,76,.08);text-decoration:none;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'Lato',sans-serif}
+.secondary-btn:hover{background:rgba(201,168,76,.16)}
+.photo-slot{position:relative}
+.photo-slot::after{content:attr(data-photo-slot);position:absolute;left:8px;bottom:8px;background:rgba(6,10,26,.7);color:#fff;padding:4px 7px;font-size:7px;letter-spacing:1px;text-transform:uppercase;opacity:.75}
+.toast{position:fixed;left:50%;bottom:94px;z-index:500;transform:translate(-50%,20px);background:#fff;color:var(--cobalt-deep);padding:11px 18px;border-radius:2px;font-size:11px;letter-spacing:1px;opacity:0;pointer-events:none;transition:.3s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ─────────────────────────────
+   FOOTER
+───────────────────────────── */
+footer{
+  background:#060a1a;
+  padding:64px 28px 80px;text-align:center;
+  border-top:1px solid rgba(201,168,76,0.12);
+  position:relative;overflow:hidden;
+}
+footer::before{
+  content:'L & B';
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:140px;color:var(--cobalt);opacity:0.04;
+  white-space:nowrap;pointer-events:none;
+}
+.footer-names{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:38px;color:var(--gold-light);font-weight:300;
+}
+.footer-date{
+  font-family:'Cinzel',serif;font-size:12px;letter-spacing:4px;
+  color:rgba(255,255,255,0.35);margin-top:10px;
+}
+.footer-love{
+  margin-top:24px;font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:16px;color:rgba(255,255,255,0.35);
+}
+
+/* ─────────────────────────────
+   MUSIC PLAYER
+───────────────────────────── */
+.music-fab{
+  position:fixed;bottom:84px;right:20px;z-index:200;
+  display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+}
+.music-main-btn{
+  width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(0,0,0,0.4),0 0 0 0 rgba(201,168,76,0.4);
+  transition:transform 0.2s;
+  animation:pulse-gold 3s infinite;
+}
+.music-main-btn:hover{transform:scale(1.08);}
+.music-main-btn svg{width:20px;fill:var(--cobalt-deep);}
+@keyframes pulse-gold{
+  0%,100%{box-shadow:0 4px 20px rgba(0,0,0,0.4),0 0 0 0 rgba(201,168,76,0.4)}
+  50%{box-shadow:0 4px 20px rgba(0,0,0,0.4),0 0 0 10px rgba(201,168,76,0)}
+}
+.music-tooltip{
+  background:rgba(10,20,100,0.85);backdrop-filter:blur(8px);
+  border:1px solid rgba(201,168,76,0.2);
+  border-radius:4px;padding:6px 14px;
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:2px;
+  color:var(--gold-light);text-transform:uppercase;white-space:nowrap;
+  opacity:0;transform:translateX(10px);transition:opacity 0.3s,transform 0.3s;
+  pointer-events:none;
+}
+.music-fab:hover .music-tooltip{opacity:1;transform:translateX(0);}
+
+/* NAVEGACIÓN MÓVIL */
+.mobile-nav{display:none;position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:190;width:calc(100% - 24px);max-width:440px;grid-template-columns:repeat(3,1fr);background:rgba(6,10,26,.9);border:1px solid rgba(201,168,76,.22);box-shadow:0 10px 35px rgba(0,0,0,.38);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:8px;overflow:hidden}
+.mobile-nav a{display:flex;min-height:56px;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:rgba(255,255,255,.7);text-decoration:none;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;border-right:1px solid rgba(201,168,76,.12)}
+.mobile-nav a:last-child{border-right:0;background:rgba(201,168,76,.12);color:var(--gold-light)}
+.mobile-nav .nav-icon{font-size:16px;line-height:1}
+@media(max-width:700px){.mobile-nav{display:grid}body{padding-bottom:76px}}
+
+/* ─────────────────────────────
+   FADE-IN OBSERVER
+───────────────────────────── */
+.fi{opacity:0;transform:translateY(30px);transition:opacity 0.85s ease,transform 0.85s ease;}
+.fi.visible{opacity:1;transform:translateY(0);}
+.fi-d1{transition-delay:0.1s}
+.fi-d2{transition-delay:0.2s}
+.fi-d3{transition-delay:0.3s}
+.fi-d4{transition-delay:0.4s}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fi{opacity:1;transform:none;transition:none}.p,.scroll-cta,.music-main-btn{animation:none}.opening{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="opening" id="opening" role="dialog" aria-modal="true" aria-labelledby="openingTitle">
+  <div class="opening-card">
+    <p class="opening-kicker">Tenemos una invitación para ti</p>
+    <h1 class="opening-monogram" id="openingTitle">L & B</h1>
+    <p class="opening-date">31 · 10 · 2026</p>
+    <p class="opening-copy">Hay momentos que se vuelven inolvidables cuando los compartimos con personas especiales.</p>
+    <button class="open-btn" id="openInvitation" type="button">Abrir invitación</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<nav class="mobile-nav" aria-label="Accesos rápidos">
+  <a href="#vestimenta"><span class="nav-icon" aria-hidden="true">✦</span><span>Vestimenta</span></a>
+  <a href="#ubicacion"><span class="nav-icon" aria-hidden="true">⌖</span><span>Ubicación</span></a>
+  <a href="#confirmar"><span class="nav-icon" aria-hidden="true">✓</span><span>Confirmar</span></a>
+</nav>
+
+<!-- ═══ MUSIC ═══ -->
+<div class="music-fab">
+  <div class="music-tooltip" id="musicLabel">Reproducir música</div>
   <button class="music-main-btn" onclick="toggleMusic()" title="Música" aria-label="Reproducir música" aria-pressed="false" id="musicButton">
     <svg id="playIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
   </button>
